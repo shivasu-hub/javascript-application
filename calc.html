@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip calculator</title>
+        <link href="./cal.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row"style="background-color:brown;">
+                <div class="col" >
+                <h3>Tip Calculator</h3>
+                </div>
+            </div>              
+        <div class="row">
+             <div class="col">
+                 
+                <table  style="width: 50%; margin-left: 20%;">
+                    
+                <tr>
+                    <td>
+                  <label >Enter your bill amount</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   <b>Rs</b> <input type="number"  id="amount" name="amount" value="number"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <label >How was the service ?</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <select id="service">
+                            <option disabled >-- choose option --</option>
+                            <option value="0.2"> Excellent-20%</option>
+                            <option value="0.1"> Good-10%</option>
+                            <option value="0.05">It was OK-5%</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                    <label >How many people sharing the bill ?</label>
+                    </td>
+                </tr>
+                <tr>
+                   <td>
+                      <input type="number" id="ppl"value="number"> </input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <button type="button"  onclick="calculate()">Calculator</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                    <span id="tip"></span>
+                   </td>
+                </tr>
+          
+            
+        </table>
+                </div>
+          </div>
+             
+        </div>
+        
+    <script src="calci.js"></script>
+    </body>
+</html>
